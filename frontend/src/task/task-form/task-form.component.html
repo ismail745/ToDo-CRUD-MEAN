@@ -1,0 +1,21 @@
+<div class="container mx-auto mt-8">
+    <h2 class="text-2xl font-semibold mb-4" style="color: var(--text);">Ajouter une tâche</h2>
+    <form [formGroup]="taskForm" (ngSubmit)="onSubmit()" class="card p-6">
+      <div class="mb-4">
+        <label for="taskName" class="block font-medium mb-2" style="color: var(--text);">Nom de la tâche</label>
+        <input
+          type="text"
+          id="taskName"
+          formControlName="title"
+          class="input"
+          placeholder="Entrez une tâche"
+        />
+      </div>
+      <button
+        type="submit"
+        class="btn btn-primary"
+      >
+        Ajouter
+      </button>
+    </form>
+  </div>
